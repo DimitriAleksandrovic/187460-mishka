@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<body>
+    <header class="page-header page-header--index">
+        <div class="page-header_wrapper">
+            <div class="page-header__logo">
+                <img src="" width="86px" height="50px" alt="mishka main logo">
+            </div>
+            <nav class="main-nav">
+                <div class="main-nav__toggler"></div>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__items"><a href="catalog.html">Каталог товаров</a></li>
+                        <li class="main-nav__items"><a href="form.html">Вязание на заказ</a></li>
+                        <li class="main-nav__items main-nav__items--search">Поиск по сайту</li>
+                        <li class="main-nav__items main-nav__items--cart">Корзина: пока пуста</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="page-header_tittle page-header_tittle--index">
+                <h1>Милые штуки ручной работы для дома</h1>
+            </div>
+            <div class="main-menu">
+                <a class="main-menu main-menu--interier">
+                    <b>Предметы интерьера</b>
+                </a>
+                <a class="main-menu main-menu--toys">
+                    <b>Детские игрушки</b>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main-wrapper">
+        <div class="week-offer">
+            <h2>Вязаные корзинки</h2>
+            <span>Товар недели</span>
+            <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="week-offer__propert">
+                <tr>
+                    <td>Цвет:</td>
+                    <td>«Тиффани»/серый</td>
+                </tr>
+                <tr>
+                    <td>Диаметр:</td>
+                    <td>25 см</td>
+                </tr>
+                <tr>
+                    <td>Высота:</td>
+                    <td>15 см</td>
+                </tr>
+            </table>
+            <img class="week-offer__img" src="" width="260px" height="315px" alt="Товар недели">
+            <b>Цена: 990 руб.</b>
+            <a class="btn" href="#">Заказать</a>
+            <img class="border">
+        </div>
+        <div class="features">
+            <h2>Коротко о нас:</h2>
+            <div class="features features--eco">
+                <b>Экологически чистые материалы</b>
+            </div>
+            <div class="features features--price">
+                <b>Скандинавский стиль по российской цене</b>
+            </div>
+            <div class="features features--like">
+                <b>Увеличивает лайки на фотографиях</b>
+            </div>
+            <div class="features features--handmade">
+                <b>Связано вручную с любовью и умилением</b>
+            </div>
+            <div class="features features--domestic">
+                <b>Поддержка отечественного производителя</b>
+            </div>
+            <div class="features features--pack">
+                <b>Поставляется в подарочной упаковке</b>
+            </div>
+            <img class="border">
+        </div>
+        <div class="reviews">
+            <h2>Отзывы</h2>
+            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <b>Анастасия Красильникова</b>
+            <p>@misssssiskras</p>
+            <a class="btn-prev" href="#"></a>
+            <a class="btn-next" href="#"></a>
+            <a class="btn" href="#">Написать</a>
+            <img class="border">
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <p>e-mail</p>
+            <p class="contacts--e-mail">info@mimimishkashop.ru</p>
+            <p>адрес:</p>
+            <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            <div class="contacts__map">
+                <img src="">
+            </div>
+            <a class="btn" href="#">Напишите нам</a>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__social">
+            <a class="page-footer__social page-footer__social--inst" href="">Instagram</a>
+            <a class="page-footer__social page-footer__social--fb" href="">Facebook</a>
+            <a class="page-footer__social page-footer__social--twit" href="">Twitter</a>
+        </div>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru">Разработано</a>
+    </footer>
+    <div class="modal">
+        <h2>Добавить в корзину</h2>
+        <p>Выберите размер:</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="s-size">S</label>
+            <input class="modal_checkbox" type="checkbox" name="s-size" id="s-size" checked>
+            <label for="m-size">M</label>
+            <input class="modal_checkbox" type="checkbox" name="m-size" id="m-size">
+            <label for="l-size">L</label>
+            <input class="modal_checkbox" type="checkbox" name="l-size" id="l-size">
+            <button class="modal__btn" type="submit" value="Добавить">
+        </form>
+    </div>
+</body>
 
-  </body>
 </html>
