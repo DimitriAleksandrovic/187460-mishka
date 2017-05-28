@@ -37,7 +37,7 @@
     <main class="main-wrapper">
         <div class="week-offer">
             <h2 class="week-offer__name">Вязаные корзинки</h2>
-            <span>Товар недели</span>
+            <p class="week-offer__mark">Товар недели</p>
             <p class="week-offer__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="week-offer__properties">
                 <tr>
@@ -56,10 +56,10 @@
             <img class="week-offer__img" src="" width="260px" height="315px" alt="Товар недели">
             <p class="week-offer__price">Цена: 990 руб.</p>
             <a class="btn" href="#">Заказать</a>
-            <img class="border">
+            <!--<img class="border">!-->
         </div>
         <div class="features-block">
-            <h2 class="features-block_headline">Коротко о нас:</h2>
+            <p class="features-block__headline">Коротко о нас:</p>
             <div class="feature feature--eco">
                 Экологически чистые материалы
             </div>
@@ -80,15 +80,17 @@
             </div>
             <!--<img class="border">!-->
         </div>
-        <div class="reviews">
-            <h2 class="reviews__headline">Отзывы</h2>
-            <p class="reviews_txt">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <p class="reviews__auth">Анастасия Красильникова</p>
-            <p class="reviews__txt">@misssssiskras</p>
-            <a class="btn-prev" href="#"></a>
-            <a class="btn-next" href="#"></a>
-            <a class="btn" href="#">Написать</a>
-            <!--<img class="border">!-->
+        <div class="reviews-block">
+            <div class="review">
+                <h2 class="review__headline">Отзывы</h2>
+                <p class="review_txt">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <p class="review__auth">Анастасия Красильникова</p>
+                <p class="review__txt">@misssssiskras</p>
+                <a class="btn-prev" href="#"></a>
+                <a class="btn-next" href="#"></a>
+                <a class="btn" href="#">Написать</a>
+                <!--<img class="border">!-->
+            </div>
         </div>
         <div class="contacts">
             <h2 class="contacts__headline">Контакты</h2>
@@ -126,7 +128,7 @@
                 <label for="l-size">L</label>
                 <input type="checkbox" name="l-size" id="l-size">
             </div>
-            <button class="modal__btn" type="submit" value="Добавить">
+            <button class="btn modal__btn" type="submit" value="Добавить">
         </form>
     </div>
 </body>
