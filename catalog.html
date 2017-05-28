@@ -8,7 +8,7 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header_wrapper">
+        <div class="page-header__wrapper">
             <div class="page-header__logo">
                 <img src="http://placehold.it" width="86px" height="50px" alt="mishka main logo">
             </div>
@@ -23,51 +23,49 @@
                     </ul>
                 </div>
             </nav>
-            <div class="page-header_tittle">
-                <h1>Каталог товаров</h1>
-            </div>
+            <h1 class="page-header__tittle">Каталог товаров</h1>
         </div>
     </header>
     <main class="main-wrapper">
         <div class="item">
             <img src="http://placehold.it" width="260px" height="195px">
-            <div class="item__name">
-                <h2>Зайчик-попрыгайчик</h2>
-                <p>Рост 30 см, вес 200 г</p>
+            <div class="item__descr">
+                <h2 class="item__descr item__descr--name">Зайчик-попрыгайчик</h2>
+                <p class="item__descr item__descr--properties">Рост 30 см, вес 200 г</p>
             </div>
             <div class="item__price">
-                <b>1 200 руб.</b>
+                1 200 руб.
             </div>
         </div>
         <div class="item">
             <img src="http://placehold.it" width="260px" height="195px">
-            <div class="item__name">
-                <h2>Корзинка для белья</h2>
-                <p>Диаметр 15 см, высота 10 см</p>
+            <div class="item__descr">
+                <h2 class="item__descr item__descr--name">Корзинка для белья</h2>
+                <p class="item__descr item__descr--properties">Диаметр 15 см, высота 10 см</p>
             </div>
             <div class="item__price">
-                <b>690 руб.</b>
+                690 руб.
             </div>
         </div>
         <div class="item">
             <img src="http://placehold.it" width="260px" height="195px">
-            <div class="item__name">
-                <h2>Большая корзинка для игрушек</h2>
-                <p>Диаметр 30 см, высота 30 см</p>
+            <div class="item__descr">
+                <h2 class="item__descr item__descr--name">Большая корзинка для игрушек</h2>
+                <p class="item__descr item__descr--properties">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="item__price">
-                <b>1 500 руб.</b>
+                1 500 руб.
             </div>
         </div>
         <div class="promo-video">
-            <h2>Процесс производства</h2>
+            <h2 class="promo-video__name">Процесс производства</h2>
             <video src="http://placehold.it" controls preload="metadata"></video>
-            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <p class="promo-video__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="btn" href="#">Сделать заказ</a>
         </div>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__social">
+        <div class="page-footer__social-block">
             <a class="page-footer__social page-footer__social--inst" href="">Instagram</a>
             <a class="page-footer__social page-footer__social--fb" href="">Facebook</a>
             <a class="page-footer__social page-footer__social--twit" href="">Twitter</a>
@@ -75,15 +73,21 @@
         <a class="page-footer__copyright" href="https://htmlacademy.ru">Разработано</a>
     </footer>
     <div class="modal">
-        <h2>Добавить в корзину</h2>
-        <p>Выберите размер:</p>
+        <h2 class="modal__headline">Добавить в корзину</h2>
+        <p class="modal__txt">Выберите размер:</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="s-size">S</label>
-            <input class="modal_checkbox" type="checkbox" name="s-size" id="s-size" checked>
-            <label for="m-size">M</label>
-            <input class="modal_checkbox" type="checkbox" name="m-size" id="m-size">
-            <label for="l-size">L</label>
-            <input class="modal_checkbox" type="checkbox" name="l-size" id="l-size">
+            <div class="modal__checkbox">
+                <label for="s-size">S</label>
+                <input type="checkbox" name="s-size" id="s-size" checked>
+            </div>
+            <div class="modal__checkbox">
+                <label for="m-size">M</label>
+                <input type="checkbox" name="m-size" id="m-size">
+            </div>
+            <div class="modal__checkbox">
+                <label for="l-size">L</label>
+                <input type="checkbox" name="l-size" id="l-size">
+            </div>
             <button class="modal__btn" type="submit" value="Добавить">
         </form>
     </div>
