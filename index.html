@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<body>
+    <header class="page-header page-header--index">
+        <div class="page-header__wrapper">
+            <div class="page-header__logo">
+                <img src="" width="86px" height="50px" alt="mishka main logo">
+            </div>
+            <nav class="main-nav">
+                <div class="main-nav__toggler"></div>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__items"><a href="catalog.html">Каталог товаров</a></li>
+                        <li class="main-nav__items"><a href="form.html">Вязание на заказ</a></li>
+                        <li class="main-nav__items main-nav__items--search">Поиск по сайту</li>
+                        <li class="main-nav__items main-nav__items--cart">Корзина: пока пуста</li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="page-header__tittle page-header__tittle--index">Милые штуки ручной работы для дома</h1>
+            <div class="items-menu">
+                <a class="items-menu items-menu--interier">
+                    Предметы интерьера
+                </a>
+                <a class="items-menu items-menu--toys">
+                    Детские игрушки
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main-wrapper">
+        <div class="week-offer">
+            <h2 class="week-offer__name">Вязаные корзинки</h2>
+            <p class="week-offer__mark">Товар недели</p>
+            <p class="week-offer__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="week-offer__properties">
+                <tr>
+                    <td>Цвет:</td>
+                    <td>«Тиффани»/серый</td>
+                </tr>
+                <tr>
+                    <td>Диаметр:</td>
+                    <td>25 см</td>
+                </tr>
+                <tr>
+                    <td>Высота:</td>
+                    <td>15 см</td>
+                </tr>
+            </table>
+            <img class="week-offer__img" src="" width="260px" height="315px" alt="Товар недели">
+            <p class="week-offer__price">Цена: 990 руб.</p>
+            <a class="btn" href="#">Заказать</a>
+            <!--<img class="border">!-->
+        </div>
+        <div class="features-block">
+            <h2 class="features-block__headline">Коротко о нас:</h2>
+            <p class="feature feature--eco">
+                Экологически чистые материалы
+            </p>
+            <p class="feature feature--price">
+                Скандинавский стиль по российской цене
+            </p>
+            <p class="feature feature--like">
+                Увеличивает лайки на фотографиях
+            </p>
+            <p class="feature feature--handmade">
+                Связано вручную с любовью и умилением
+            </p>
+            <div class="feature feature--domestic">
+                Поддержка отечественного производителя
+                </p>
+                <div class="feature feature--pack">
+                    Поставляется в подарочной упаковке
+                    </p>
+                    <!--<img class="border">!-->
+                </div>
+                <div class="reviews-block">
+                    <div class="review">
+                        <h2 class="review__headline">Отзывы</h2>
+                        <p class="review_text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                        <p class="review__author-name">Анастасия Красильникова</p>
+                        <p class="review__author-nick">@misssssiskras</p>
+                        <a class="btn-prev" href="#"></a>
+                        <a class="btn-next" href="#"></a>
+                        <a class="btn" href="#">Написать</a>
+                        <!--<img class="border">!-->
+                    </div>
+                </div>
+                <div class="contacts">
+                    <h2 class="contacts__headline">Контакты</h2>
+                    <p class="contacts__txt">e-mail</p>
+                    <a class="contacts__txt contacts__txt--e-mail">info@mimimishkashop.ru</a>
+                    <p class="contacts__txt">адрес:</p>
+                    <p class="contacts__txt">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+                    <div class="contacts__map">
+                        <img src="">
+                    </div>
+                    <a class="btn" href="#">Напишите нам</a>
+                </div>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__social-block">
+            <a class="page-footer__social page-footer__social--inst" href="">Instagram</a>
+            <a class="page-footer__social page-footer__social--fb" href="">Facebook</a>
+            <a class="page-footer__social page-footer__social--twit" href="">Twitter</a>
+        </div>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru">Разработано</a>
+    </footer>
+    <div class="modal">
+        <h2 class="modal__headline">Добавить в корзину</h2>
+        <p class="modal__txt">Выберите размер:</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal__checkbox">
+                <label for="s-size">S</label>
+                <input type="checkbox" name="s-size" id="s-size" checked>
+            </div>
+            <div class="modal__checkbox">
+                <label for="m-size">M</label>
+                <input type="checkbox" name="m-size" id="m-size">
+            </div>
+            <div class="modal__checkbox">
+                <label for="l-size">L</label>
+                <input type="checkbox" name="l-size" id="l-size">
+            </div>
+            <button class="btn modal__btn" type="submit" value="Добавить">
+        </form>
+    </div>
+</body>
 
-  </body>
 </html>
