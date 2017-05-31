@@ -1,0 +1,26 @@
+.page-header__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.page-header__tittle {
+    margin: 0;
+    width: 244px;
+    height: 30px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 72px;
+    padding-bottom: 75px;
+    @include font-set(bold, 27px, 30px, center);
+    color: rgb(1, 0, 0);
+    background-color: rgb(241, 241, 241);
+    border-top: 1px solid rgb(236, 236, 236);
+    &--index {
+        height: 90px;
+        padding-bottom: 120px;
+        background-image: url('../../img/hero-mobile@1x.jpg');
+        background-position: 50% 20%;
+        /*background-color: green;*/
+    }
+}
