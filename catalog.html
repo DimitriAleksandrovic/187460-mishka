@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка. Каталог товаров</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
         <div class="page-header__wrapper">
             <div class="page-header__logo">
-                <img src="http://placehold.it" width="86px" height="50px" alt="mishka main logo">
+                <img src="img/logo-mobile.svg" width="86px" height="50px" alt="mishka main logo">
             </div>
             <nav class="main-nav">
                 <div class="main-nav__toggler"></div>
@@ -28,7 +29,7 @@
     </header>
     <main class="main-wrapper">
         <div class="item">
-            <img src="http://placehold.it" width="260px" height="195px">
+            <img class="item__img" src="img/photo-1-mobile@1x.jpg" width="260px" height="195px">
             <div class="item__descr">
                 <h2 class="item__name">Зайчик-попрыгайчик</h2>
                 <p class="item__properties">Рост 30 см, вес 200 г</p>
@@ -39,7 +40,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="http://placehold.it" width="260px" height="195px">
+            <img class="item__img" src="img/photo-2-mobile@1x.jpg" width="260px" height="195px">
             <div class="item__descr">
                 <h2 class="item__name">Корзинка для белья</h2>
                 <p class="item__properties">Диаметр 15 см, высота 10 см</p>
@@ -51,7 +52,7 @@
         </div>
         </div>
         <div class="item">
-            <img src="http://placehold.it" width="260px" height="195px">
+            <img class="item__img" src="img/photo-3-mobile@1x.jpg" width="260px" height="195px">
             <div class="item__descr">
                 <h2 class="item__name">Большая корзинка для игрушек</h2>
                 <p class="item__properties">Диаметр 30 см, высота 30 см</p>
@@ -64,9 +65,9 @@
         </div>
         <div class="promo-video">
             <h2 class="promo-video__name">Процесс производства</h2>
-            <video src="http://placehold.it" controls preload="metadata"></video>
+            <video src="video-mobile@1x.jpg" controls preload="metadata" width="260px" height="160px"></video>
             <p class="promo-video__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="btn" href="#">Сделать заказ</a>
+            <a class="btn btn--promo-video" href="#">Сделать заказ</a>
         </div>
     </main>
     <footer class="page-footer">
@@ -80,7 +81,7 @@
     <div class="modal">
         <h2 class="modal__headline">Добавить в корзину</h2>
         <p class="modal__txt">Выберите размер:</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="modal__checkbox">
                 <label for="s-size">S</label>
                 <input type="checkbox" name="s-size" id="s-size" checked>
@@ -93,7 +94,7 @@
                 <label for="l-size">L</label>
                 <input type="checkbox" name="l-size" id="l-size">
             </div>
-            <button class="btn modal__btn" type="submit" value="Добавить">
+            <button class="btn modal__btn" type="submit" value="Добавить">Добавить</button>
         </form>
     </div>
 </body>

@@ -1,0 +1,21 @@
+.page-footer {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: $lightestgray;
+    border: 1px solid red;
+}
+
+.page-footer__social-block {
+    height: 80px;
+}
+
+.page-footer__copyright {
+    height: 22px;
+    margin: 0;
+    @include main-paddings(30px, 28px, 0);
+    padding-bottom: 30px;
+    @include font-set(bold, 19px, 22px, center);
+    color: $black;
+    text-decoration: none;
+}

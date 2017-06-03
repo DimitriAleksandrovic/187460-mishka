@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка. Вязание на заказ</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
         <div class="page-header__wrapper">
             <div class="page-header__logo">
-                <img src="http://placehold.it" width="86px" height="50px" alt="mishka main logo">
+                <img src="img/logo-mobile.svg" width="86px" height="50px" alt="mishka main logo">
             </div>
             <nav class="main-nav">
                 <div class="main-nav__toggler"></div>
@@ -23,7 +24,7 @@
                     </ul>
                 </div>
             </nav>
-            <h1 class="page-header__tittle">Каталог товаров</h1>
+            <h1 class="page-header__tittle">Вязание на заказ</h1>
         </div>
     </header>
     <main class="main-wrapper">
@@ -77,12 +78,13 @@
                 <input class="order__textfield" type="text" name="father-name" id="father-name" placeholder="Отчество, если желаете">
             </fieldset>
             <label class="order__fieldset-headline" for="tel">Тел</label>
-            <input class="order__textfield--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" required>
-            <label class="order__fieldset-headline" for="email">Тел</label>
-            <input class="order__textfield--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+            <input class="order__textfield order__textfield--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" required>
+            <label class="order__fieldset-headline" for="email">E-mail</label>
+            <input class="order__textfield order__textfield--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
             <label class="order__fieldset-headline" for="add">Доп</label>
             <textarea class="order__textfield" name="add" id="add">Опишите все ваши пожелания к заказу</textarea>
-            <button class="btn" type="submit" value="Отправить Заказ">
+            <p class="order__textfield order__txt--required">*Поля обязательны для заполнения</p>
+            <button class="btn" type="submit" value="Отправить Заказ">Отправить Заказ</button>
         </form>
     </main>
     <footer class="page-footer">

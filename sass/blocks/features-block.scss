@@ -1,0 +1,6 @@
+.features-block__headline {
+    margin: 0;
+    @include main-paddings(30px, 35px, 0);
+    @include font-set(bold, 25px, 30px, left);
+    color: $black;
+}

@@ -1,0 +1,12 @@
+@mixin font-set($font-weight, $font-size, $line-height, $text-align) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: $text-align;
+}
+
+@mixin main-paddings($padding-left, $padding-top, $padding-bottom) {
+    padding-left: $padding-left;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
