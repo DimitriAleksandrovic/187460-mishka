@@ -1,19 +1,17 @@
-@import '../mixins.scss';
-@import '../variables.scss';
 .order {
     margin: 0 auto;
     width: 260px;
     @include main-paddings(30px, 28px, 55px);
     padding-right: 30px;
     @include font-set(bold, 17px, 18px, left);
-    color: rgb(0, 0, 0);
+    color: $black;
 }
 
 .order__txt {
     margin: 0;
     display: block;
     @include font-set(normal, 13px, 24px, left);
-    color: $main-txt;
+    color: $darkgray;
     &--required {
         @include font-set(normal, 14px, 16px, left);
     }
@@ -29,6 +27,10 @@
 
 .order__fieldset-headline {
     @include font-set(bold, 17px, 16px, left);
-    color: rgb(99, 209, 187);
+    color: $green;
     text-transform: uppercase;
+}
+
+.order__textfield {
+    display: block;
 }

@@ -11,7 +11,7 @@
     @include main-paddings(30px, 25px, 25px);
     padding-right: 30px;
     @include font-set(bold, 17px, 24px, left);
-    color: rgb(0, 0, 0);
+    color: $black;
 }
 
 .promo-video__descr {
@@ -19,7 +19,7 @@
     @include main-paddings(30px, 30px, 30px);
     padding-right: 30px;
     @include font-set(normal, 13px, 24px, left);
-    color: $main-txt;
+    color: $darkgray;
 }
 
 .btn--promo-video {

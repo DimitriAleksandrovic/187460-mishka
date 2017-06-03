@@ -2,7 +2,7 @@
     margin: 0;
     @include main-paddings(30px, 30px, 0);
     @include font-set(bold, 25px, 30px, left);
-    color: rgb(0, 0, 0);
+    color: $black;
 }
 
 .week-offer__mark {
@@ -10,7 +10,7 @@
     @include main-paddings(30px, 5px, 0);
     @include font-set(bold, 17px, 20px, left);
     text-transform: uppercase;
-    color: rgb(99, 209, 187);
+    color: $green;
 }
 
 .week-offer__descr {
@@ -18,26 +18,26 @@
     @include main-paddings(30px, 30px, 0);
     padding-right: 30px;
     @include font-set(normal, 15px, 24px, left);
-    color: $main-txt;
+    color: $darkgray;
 }
 
 .week-offer__properties {
+    margin: 0;
+    @include main-paddings(30px, 20px, 0);
+    padding-right: 30px;
+    @include font-set(normal, 15px, 24px, left);
+    color: $darkgray;
+}
+
+.week-offer__properties-cell {
+    height: 40px;
+    border-bottom: 1px solid $lightestgray;
     &--col1 {
         width: 100px;
     }
     &--col2 {
         width: 160px;
     }
-    margin: 0;
-    @include main-paddings(30px, 20px, 0);
-    padding-right: 30px;
-    @include font-set(normal, 15px, 24px, left);
-    color: $main-txt;
-}
-
-.week-offer__properties td {
-    height: 40px;
-    border-bottom: 1px solid rgb(241, 241, 241);
 }
 
 .week-offer__img {
@@ -49,5 +49,5 @@
     margin: 0;
     padding-bottom: 28px;
     @include font-set(bold, 17px, 24px, center);
-    color: $main-txt;
+    color: $darkgray;
 }

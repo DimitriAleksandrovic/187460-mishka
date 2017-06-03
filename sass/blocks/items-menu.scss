@@ -3,13 +3,13 @@
     width: 290px;
     min-height: 48px;
     @include font-set(bold, 19px, 24px, left);
-    color: rgb(255, 255, 255);
+    color: $white;
     &--interier {
         @include main-paddings(30px, 28px, 30px);
-        background-color: rgb(99, 209, 187);
+        background-color: $green;
     }
     &--toys {
         @include main-paddings(30px, 28px, 30px);
-        background-color: rgb(86, 195, 178);
+        background-color: $darkgreen;
     }
 }

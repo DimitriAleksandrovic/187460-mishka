@@ -22,13 +22,12 @@
     padding-bottom: 75px;
     @include font-set(bold, 27px, 30px, center);
     color: rgb(1, 0, 0);
-    background-color: rgb(241, 241, 241);
-    border-top: 1px solid rgb(236, 236, 236);
+    background-color: $lightestgray;
+    border-top: 1px solid $lightgray;
     &--index {
         height: 90px;
         padding-bottom: 120px;
         background-image: url('../../img/hero-mobile@1x.jpg');
         background-position: 50% 20%;
-        /*background-color: green;*/
     }
 }
