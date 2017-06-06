@@ -3,3 +3,9 @@
     margin: 0 auto;
     border: 1px solid red;
 }
+
+@media (min-width: 768px) {
+    .main-wrapper {
+        width: 768px;
+    }
+}

@@ -13,3 +13,14 @@
         background-color: $darkgreen;
     }
 }
+
+@media (min-width: 768px) {
+    .items-menu {
+        display: flex;
+        margin: 0 auto;
+        max-height: 115px;
+        width: 668px;
+        @include font-set(bold, 20px, 30px, left);
+        border: 1px solid blue;
+    }
+}
