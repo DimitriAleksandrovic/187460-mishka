@@ -5,6 +5,7 @@
 
 .item__img {
     display: block;
+    background: green;
 }
 
 .item__descr {
@@ -45,4 +46,31 @@
 .item__cart {
     display: inline-block;
     text-align: right;
+}
+
+@media (min-width: 768px) {
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 668px;
+        height: 335px;
+        border: 1px dashed blue;
+    }
+    .item__img {
+        width: 334px;
+        height: 335px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .item {
+        width: 315px;
+        height: 660px;
+    }
+    .item__img {
+        width: 315px;
+        height: 460px;
+    }
 }

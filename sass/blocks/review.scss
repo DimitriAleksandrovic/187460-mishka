@@ -24,7 +24,7 @@
 @media (min-width: 768px) {
     .review {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         border: 1px dashed blue;
     }
     .review-text {

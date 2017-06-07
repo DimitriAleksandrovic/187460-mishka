@@ -40,3 +40,14 @@
         center);
     }
 }
+
+@media (min-width: 1150px) {
+    .page-header__wrapper {
+        max-width: 1150px;
+    }
+    .page-header__tittle {
+        max-width: 606px;
+        padding-left: 272px;
+        padding-right: 272px;
+    }
+}

@@ -25,3 +25,11 @@
 .btn--promo-video {
     width: 188px;
 }
+
+@media (min-width: 768px) {
+    .promo-video {
+        display: flex;
+        flex-wrap: wrap;
+        width: 668px;
+    }
+}

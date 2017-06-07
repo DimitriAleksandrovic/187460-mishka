@@ -10,9 +10,20 @@
     .reviews-block {
         display: flex;
         flex-wrap: wrap;
-
+        justify-content: space-between;
+        margin: 0 auto;
     }
     .btn-reply {
-        order: 0;
+        order: -1;
+    }
+    .reviews-block__headline {
+        order: -2;
+    }
+}
+
+@media (min-width: 1150px) {
+    .reviews-block {
+        width: 875px;
+        padding-leftt: 175px;
     }
 }

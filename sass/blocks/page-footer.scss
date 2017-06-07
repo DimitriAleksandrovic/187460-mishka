@@ -30,4 +30,14 @@
         display: flex;
         justify-content: space-between;
     }
+    .page-footer__logo {
+        display: block;
+        background-image: url('../../img/logo-mobile.svg')
+    }
+}
+
+@media (min-width: 1150px) {
+    .page-footer {
+        width: 1150px;
+    }
 }
