@@ -30,61 +30,75 @@
     <main class="main-wrapper">
         <form class="order" action="https://echo.htmlacademy.ru" method="post">
             <p class="order__txt">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-            <fieldset class="order__fieldset">
-                <legend class="order__fieldset-headline">Тип</legend>
+            <div class="order__fieldset-radio">
+                <div class="order__fieldset-headline">Тип</div>
                 <div class="order__radio">
-                    <input type="radio" name="interier" id="interier" checked>
-                    <label class="order__fieldlabel" for="interier">Аксессуар для интерьера</label>
+                    <div class="order__radio-field">
+                        <input type="radio" name="interier" id="interier" checked>
+                        <label class="order__fieldlabel" for="interier">Аксессуар для интерьера</label>
+                    </div>
+                    <div class="order__radio-field">
+                        <input type="radio" name="toy" id="toy">
+                        <label class="order__fieldlabel" for="interier">Детская игрушка</label>
+                    </div>
                 </div>
-                <div class="order__radio">
-                    <input type="radio" name="toy" id="toy">
-                    <label class="order__fieldlabel" for="interier">Детская игрушка</label>
-                </div>
-            </fieldset>
-            <fieldset class="order__fieldset">
-                <legend class="order__fieldset-headline">Цвет</legend>
+            </div>
+            <div class="order__fieldset-checkbox">
+                <div class="order__fieldset-headline">Цвет</div>
                 <div class="order__checkbox">
-                    <input type="checkbox" name="white" id="white" checked>
-                    <label class="order__fieldlabel" for="white">Белый</label>
+                    <div class="order__checkbox-field">
+                        <input type="checkbox" name="white" id="white" checked>
+                        <label class="order__fieldlabel" for="white">Белый</label>
+                    </div>
+                    <div class="order__checkbox-field">
+                        <input class="checkbox" type="checkbox" name="gray" id="gray" checked>
+                        <label class="order__fieldlabel" for="gray">Серый</label>
+                    </div>
+                    <div class="order__checkbox-field">
+                        <input type="checkbox" name="tiffany" id="tiffany">
+                        <label class="order__fieldlabel" for="tiffany">«Тиффани»</label>
+                    </div>
+                    <div class="order__checkbox-field">
+                        <input type="checkbox" name="black" id="black">
+                        <label class="order__fieldlabel" for="black">Черный</label>
+                    </div>
+                    <div class="order__checkbox-field">
+                        <input type="checkbox" name="rose" id="rose">
+                        <label class="order__fieldlabel" for="rose">Розовый</label>
+                    </div>
+                    <div class="order__checkbox-field">
+                        <input type="checkbox" name="orange" id="orange">
+                        <label class="order__fieldlabel" for="orange">Оранжевый</label>
+                    </div>
                 </div>
-                <div class="order__checkbox">
-                    <input class="order__checkbox" type="checkbox" name="gray" id="gray" checked>
-                    <label class="order__fieldlabel" for="gray">Серый</label>
+            </div>
+            <div class="order__fieldset-username">
+                <div class="order__fieldset-headline">ФИО</div>
+                <div class="order__username">
+                    <div class="order__username-field">
+                        <label class="order__fieldlabel" for="1st-name">Имя</label>
+                        <input class="order__textfield" type="text" name="1st-name" id="1st-name" placeholder="Введите ваше имя*" required>
+                    </div>
+                    <div class="order__username-field">
+                        <label class="order__fieldlabel" for="family-name">Фамилия</label>
+                        <input class="order__textfield" type="text" name="family-name" id="family-name" placeholder="Укажите фамилию*" required>
+                    </div>
+                    <div class="order__username-field">
+                        <label class="order__fieldlabel" for="father-name">Отчество:</label>
+                        <input class="order__textfield" type="text" name="father-name" id="father-name" placeholder="Отчество, если желаете">
+                    </div>
                 </div>
-                <div class="order__checkbox">
-                    <input type="checkbox" name="tiffany" id="tiffany">
-                    <label class="order__fieldlabel" for="tiffany">«Тиффани»</label>
-                </div>
-                <div class="order__checkbox">
-                    <input type="checkbox" name="black" id="black">
-                    <label class="order__fieldlabel" for="black">Черный</label>
-                </div>
-                <div class="order__checkbox">
-                    <input type="checkbox" name="rose" id="rose">
-                    <label class="order__fieldlabel" for="rose">Розовый</label>
-                </div>
-                <div class="order__checkbox">
-                    <input type="checkbox" name="orange" id="orange">
-                    <label class="order__fieldlabel" for="orange">Оранжевый</label>
-                </div>
-            </fieldset>
-            <fieldset class="order__fieldset">
-                <legend class="order__fieldset-headline">ФИО</legend>
-                <label class="order__fieldlabel" for="1st-name">Имя</label>
-                <input class="order__textfield" type="text" name="1st-name" id="1st-name" placeholder="Введите ваше имя*" required>
-                <label class="order__fieldlabel" for="family-name">Фамилия</label>
-                <input class="order__textfield" type="text" name="family-name" id="family-name" placeholder="Укажите фамилию*" required>
-                <label class="order__fieldlabel" for="father-name">Отчество:</label>
-                <input class="order__textfield" type="text" name="father-name" id="father-name" placeholder="Отчество, если желаете">
-            </fieldset>
+            </div>
             <label class="order__fieldset-headline" for="tel">Тел</label>
             <input class="order__textfield order__textfield--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" required>
             <label class="order__fieldset-headline" for="email">E-mail</label>
             <input class="order__textfield order__textfield--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
             <label class="order__fieldset-headline" for="add">Доп</label>
             <textarea class="order__textfield" name="add" id="add">Опишите все ваши пожелания к заказу</textarea>
-            <p class="order__textfield order__txt--required">*Поля обязательны для заполнения</p>
-            <button class="btn" type="submit" value="Отправить Заказ">Отправить Заказ</button>
+            <div class="order__submit">
+                <p class="order__required">*Поля обязательны для заполнения</p>
+                <button class="btn" type="submit" value="Отправить Заказ">Отправить Заказ</button>
+            </div>
         </form>
     </main>
     <footer class="page-footer">
