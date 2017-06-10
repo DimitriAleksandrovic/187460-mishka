@@ -48,12 +48,12 @@
     .order__fieldset-checkbox,
     .order__fieldset-radio,
     .order__fieldset-username,
+    .order__tel-field,
+    .order__email-field,
     .order__submit {
         display: flex;
-        /*justify-content: space-between;*/
     }
     .order__fieldset-headline {
-        /*float: left;*/
         padding-right: 120px;
         min-height: 210px;
     }

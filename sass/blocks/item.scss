@@ -24,13 +24,13 @@
 
 .item__properties {
     margin: 0;
-    /*padding-top: 10px;*/
     @include font-set(normal, 13px, 30px, left);
     color: $darkgray;
 }
 
 .item__price-block {
     margin: 0;
+    margin-top: auto;
     @include main-paddings(30px, 20px, 25px);
     padding-right: 30px;
     border: 1px solid red;
@@ -53,19 +53,29 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: left;
         flex-wrap: wrap;
         width: 668px;
         height: 335px;
+        @include main-paddings(50px, 30px, 0);
+        padding-right: 50px;
         border: 1px dashed blue;
     }
     .item__img {
         width: 334px;
         height: 335px;
     }
+    .item__descr {
+        margin-left: 0;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 1150px) {
     .item {
+        flex-wrap: nowrap;
+        padding-left: 0;
+        padding-right: 0;
         width: 315px;
         height: 660px;
     }

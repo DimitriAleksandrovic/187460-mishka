@@ -36,4 +36,7 @@
     .contacts {
         flex-direction: column;
     }
+    .contacts__headline {
+        @include font-set(bold, 53px, 57px, left);
+    }
 }
