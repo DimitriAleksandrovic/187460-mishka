@@ -10,21 +10,34 @@
 <body>
     <header class="page-header">
         <div class="page-header__wrapper">
-            <nav class="main-nav">
-                <div class="main-nav__logo">
-                    <img src="img/logo-mobile.svg" width="86px" height="50px" alt="mishka main logo">
-                </div>
-                <div class="main-nav__toggler"></div>
-                <div class="main-nav__wrapper">
-                    <ul class="main-nav__list">
+            <div class="page-header__logo">
+            </div>
+            <div class="nav-wrapper">
+                <nav class="main-nav">
+                    <div class="main-nav__toggler">
+                    </div>
+                    <ul class="main-nav__catalog-list">
                         <li class="main-nav__items"><a href="catalog.html">Каталог товаров</a></li>
                         <li class="main-nav__items"><a href="form.html">Вязание на заказ</a></li>
-                        <li class="main-nav__items main-nav__items--search">Поиск по сайту</li>
-                        <li class="main-nav__items main-nav__items--cart">Корзина: пока пуста</li>
+                        <li class="main-nav__items"><a href="form.html">Новые поступления</a></li>
+                        <li class="main-nav__items"><a href="form.html">Распродажа</a></li>
                     </ul>
+                </nav>
+                <div class="user-nav">
+                    <button class="user-nav__items user-nav__items--search">Поиск по сайту</button>
+                    <button class="user-nav__items user-nav__items--cart">Корзина: пока пуста</button>
+                    <p class="user-nav__items">Бесплатная доставка по России</p>
                 </div>
-            </nav>
-            <h1 class="page-header__tittle">Вязание на заказ</h1>
+            </div>
+            <h1 class="page-header__tittle">Милые штуки ручной работы для дома</h1>
+            <div class="items-menu">
+                <a class="items-menu items-menu--interier">
+                    Предметы <br>интерьера
+                </a>
+                <a class="items-menu items-menu--toys">
+                    Детские <br>игрушки
+                </a>
+            </div>
         </div>
     </header>
     <main class="main-wrapper">

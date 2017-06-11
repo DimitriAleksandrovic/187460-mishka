@@ -1,6 +1,11 @@
+.page__header {
+    margin: 0 auto;
+}
+
 .page-header__wrapper {
     max-width: 320px;
     margin: 0 auto;
+    margin-top: 80px;
     /*width: 260px;
     padding: 0 30px;*/
     border: 1px solid red;
@@ -26,18 +31,40 @@
     }
 }
 
+.page-header__logo {
+    position: absolute;
+    top: 10px;
+    width: 320px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url('../../img/logo-mobile.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: $white;
+    border-bottom: 1px solid $lightgray;
+}
+
 @media (min-width: 768px) {
     .page-header__wrapper {
         max-width: 768px;
     }
     .page-header__tittle {
         max-width: 496px;
+        /*margin-top: 80px;*/
         padding-left: 135px;
         padding-right: 135px;
+        padding-top: 160px;
+        padding-bottom: 370px;
         @include font-set(bold,
         43px,
         50px,
         center);
+    }
+    .page-header__logo {
+        width: 768px;
+        height: 90px;
+        background-image: url('../../img/logo-mobile.svg');
+        background-position: 50px 50%;
     }
 }
 
@@ -49,5 +76,9 @@
         max-width: 606px;
         padding-left: 272px;
         padding-right: 272px;
+    }
+    .page-header__logo {
+        width: 1150px;
+        background-position: 50% 50%;
     }
 }

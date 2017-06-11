@@ -65,6 +65,9 @@
     .order__required {
         order: 1;
     }
+    .order__fieldset-checkbox {
+        background-color: $lightestgray;
+    }
 }
 
 @media (min-width: 1150px) {
