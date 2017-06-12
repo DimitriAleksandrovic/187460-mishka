@@ -1,12 +1,13 @@
 .main-wrapper {
     width: 320px;
     margin: 0 auto;
-    border: 1px solid red;
+    border: 1px dashed red;
 }
 
 @media (min-width: 768px) {
     .main-wrapper {
         width: 768px;
+        /*padding: 0 50px;*/
     }
 }
 

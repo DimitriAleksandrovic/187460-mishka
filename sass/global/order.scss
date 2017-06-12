@@ -13,13 +13,17 @@
     display: block;
     @include font-set(normal, 13px, 24px, left);
     color: $darkgray;
-    &--required {
-        @include font-set(normal, 14px, 16px, left);
-    }
+}
+
+.order__required {
+    @include font-set(normal, 14px, 16px, left);
 }
 
 .order__fieldset-radio,
-.order__fieldset-checkbox {
+.order__fieldset-checkbox,
+.order__fieldset-username,
+.order__fieldset-userdata,
+.order__fieldset-comment {
     padding: 0;
     margin: 0;
     margin-top: 30px;
@@ -39,43 +43,110 @@
 
 .order__textfield {
     display: block;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $black;
+    &--comment {
+        min-height: 140px;
+        border: 2px solid $black;
+        box-sizing: border-box;
+    }
 }
 
 @media (min-width: 768px) {
     .order {
-        min-width: 668px;
+        min-width: 768px;
+        padding: 0;
+    }
+    .order__txt {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .order__fieldset-inner {
+        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
+        border: 1px dashed orange;
+        &--block {
+            display: block;
+        }
     }
     .order__fieldset-checkbox,
+    .order__fieldset-userdata {
+        background-color: $lightestgray;
+    }
     .order__fieldset-radio,
+    .order__fieldset-checkbox,
     .order__fieldset-username,
-    .order__tel-field,
-    .order__email-field,
-    .order__submit {
-        display: flex;
+    .order__fieldset-userdata,
+    .order__fieldset-comment {
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .order__fieldset-headline {
         padding-right: 120px;
-        min-height: 210px;
+        &--tel,
+        &--email {
+            padding-right: 0;
+        }
     }
     .order__checkbox {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        min-height: 205px;
     }
-    .order__required {
-        order: 1;
+    .order__username-field {
+        display: flex;
+        width: 500px;
+        border: 1px dashed green;
     }
-    .order__fieldset-checkbox {
-        background-color: $lightestgray;
+    .order__tel-field,
+    .order__email-field {
+        display: flex;
+        justify-content: space-between;
+    }
+    .order__textfield {
+        &--email,
+        &--tel {
+            width: 500px;
+        }
+    }
+    .btn-form {
+        order: -1;
+        margin-left: auto;
     }
 }
 
 @media (min-width: 1150px) {
     .order {
-        width: 1050px;
-        padding-left: 60px;
+        min-width: 1150px;
     }
-    .order__required {
-        order: -1;
+    .order__txt {
+        padding-left: 225px;
+        padding-right: 225px;
+    }
+    .order__fieldset-inner {
+        padding-left: 225px;
+        padding-right: 225px;
+    }
+    .order__fieldset-headline {
+        padding-right: 70px;
+        &--tel,
+        &--email {
+            padding-right: 0;
+        }
+    }
+    .order__username-field {
+        width: 700px;
+    }
+    .order__textfield {
+        &--email,
+        &--tel {
+            width: 700px;
+        }
     }
 }

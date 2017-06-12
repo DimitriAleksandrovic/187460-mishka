@@ -40,10 +40,11 @@
             </div>
         </div>
     </header>
-    <main class="main-wrapper">
-        <form class="order" action="https://echo.htmlacademy.ru" method="post">
-            <p class="order__txt">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-            <div class="order__fieldset-radio">
+    <!--<main class="main-wrapper">!-->
+    <form class="order" action="https://echo.htmlacademy.ru" method="post">
+        <p class="order__txt">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <div class="order__fieldset-radio">
+            <div class="order__fieldset-inner">
                 <div class="order__fieldset-headline">Тип</div>
                 <div class="order__radio">
                     <div class="order__radio-field">
@@ -56,7 +57,9 @@
                     </div>
                 </div>
             </div>
-            <div class="order__fieldset-checkbox">
+        </div>
+        <div class="order__fieldset-checkbox">
+            <div class="order__fieldset-inner">
                 <div class="order__fieldset-headline">Цвет</div>
                 <div class="order__checkbox">
                     <div class="order__checkbox-field">
@@ -85,7 +88,9 @@
                     </div>
                 </div>
             </div>
-            <div class="order__fieldset-username">
+        </div>
+        <div class="order__fieldset-username">
+            <div class="order__fieldset-inner">
                 <div class="order__fieldset-headline">ФИО</div>
                 <div class="order__username">
                     <div class="order__username-field">
@@ -102,26 +107,33 @@
                     </div>
                 </div>
             </div>
-            <div class="order__userdata">
+        </div>
+        <div class="order__fieldset-userdata">
+            <div class="order__fieldset-inner order__fieldset-inner--block">
                 <div class="order__tel-field">
-                    <label class="order__fieldset-headline" for="tel">Тел</label>
+                    <label class="order__fieldset-headline order__fieldset-headline--tel" for="tel">Тел</label>
                     <input class="order__textfield order__textfield--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" required>
                 </div>
                 <div class="order__email-field">
-                    <label class="order__fieldset-headline" for="email">E-mail</label>
+                    <label class="order__fieldset-headline order__fieldset-headline--email" for="email">E-mail</label>
                     <input class="order__textfield order__textfield--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
                 </div>
             </div>
-            <div class="order__add-field">
-                <label class="order__fieldset-headline" for="add">Доп</label>
-                <textarea class="order__textfield" name="add" id="add">Опишите все ваши пожелания к заказу</textarea>
+        </div>
+        <div class="order__fieldset-comment">
+            <div class="order__fieldset-inner">
+                <label class="order__fieldset-headline" for="comment">Доп</label>
+                <textarea class="order__textfield order__textfield--comment" name="comment" id="comment">Опишите все ваши пожелания к заказу</textarea>
             </div>
-            <div class="order__submit">
+        </div>
+        <div class="order__submit">
+            <div class="order__fieldset-inner">
                 <p class="order__required">*Поля обязательны для заполнения</p>
-                <button class="btn" type="submit" value="Отправить Заказ">Отправить Заказ</button>
+                <button class="btn btn-form" type="submit" value="Отправить Заказ">Отправить Заказ</button>
             </div>
-        </form>
-    </main>
+        </div>
+    </form>
+    <!--</main>!-->
     <footer class="page-footer">
         <div class="page-footer__social-block">
             <a class="page-footer__social page-footer__social--inst" href="">Instagram</a>
