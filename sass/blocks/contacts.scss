@@ -2,7 +2,7 @@
     margin: 0 auto;
     @include main-paddings(30px, 45px, 0);
     padding-right: 30px;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 .contacts__headline {
@@ -22,7 +22,7 @@
     padding-left: 30px;
     @include font-set(normal, 15px, 30px, left);
     color: $darkgray;
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
 }
 
 .contacts__txt:nth-child(2n) {
@@ -60,7 +60,7 @@
         padding-left: 50px;
         padding-right: 50px;
         max-height: 640px;
-        border: 1px dashed blue;
+        /*border: 1px dashed blue;*/
     }
     .contacts__inner {
         display: flex;
@@ -93,9 +93,8 @@
         margin-left: auto;
         margin-bottom: auto;
     }
-    .btn-contacts {
+    .contacts__btn {
         margin-left: 175px;
-        margin-right: auto;
-        margin-top: auto;
+        margin-bottom: 0;
     }
 }

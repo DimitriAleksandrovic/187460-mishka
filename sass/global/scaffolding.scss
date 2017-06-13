@@ -1,17 +1,17 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    min-width: 320px;
+    /*min-width: 320px;*/
     border: 1px dashed green;
 }
 
 @media (min-width: 768px) {
-    .body {
+    /*.body {
         min-width: 768px;
-    }
+    }*/
 }
 
 @media (min-width: 1150px) {
-    .body {
+    /*.body {
         min-width: 1250px;
-    }
+    }*/
 }

@@ -8,7 +8,7 @@
     width: 320px;
     padding: 0;
     list-style: none;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 .main-nav__items {
@@ -41,11 +41,12 @@
         margin-top: auto;
         width: 165px;
         height: 60px;
-        @include main-paddings(0px, 20px, 20px);
+        @include main-paddings(0px, 15px, 25px);
         box-sizing: border-box;
         @include font-set(bold, 15px, 24px, left);
         background-color: transparent;
-        border: 1px solid orange;
+        border: none;
+        /*border: 1px solid orange;*/
     }
 }
 
@@ -65,6 +66,9 @@
             @include main-paddings(35px, 20px, 20px);
             @include font-set(bold, 15px, 24px, left);
             background-color: transparent;
+        }
+        &:first-child {
+            border-right: 1px solid $lightgray;
         }
     }
 }

@@ -1,8 +1,12 @@
 .page-footer {
-    width: 320px;
     margin: 0 auto;
     margin-top: 40px;
     background-color: $lightestgray;
+}
+
+.page-footer__inner {
+    margin: 0 auto;
+    width: 320px;
     border: 1px solid red;
 }
 
@@ -25,7 +29,7 @@
 }
 
 @media (min-width: 768px) {
-    .page-footer {
+    .page-footer__inner {
         width: 668px;
         display: flex;
         justify-content: space-between;
@@ -37,7 +41,7 @@
 }
 
 @media (min-width: 1150px) {
-    .page-footer {
+    .page-footer__inner {
         width: 1150px;
     }
 }
