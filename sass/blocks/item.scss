@@ -1,6 +1,6 @@
 .item {
-    @include main-paddings(30px, 30px, 0);
-    padding-right: 30px;
+    margin-top: 30px;
+    border: 1px solid $lightgray;
 }
 
 .item__img {
@@ -13,7 +13,6 @@
     padding-top: 25px;
     padding-bottom: 25px;
     width: 200px;
-    border: 1px solid red;
 }
 
 .item__name {
@@ -33,7 +32,7 @@
     margin-top: auto;
     @include main-paddings(30px, 20px, 25px);
     padding-right: 30px;
-    border: 1px solid red;
+    border-top: 1px solid $lightgray;
 }
 
 .item__price {
@@ -52,13 +51,10 @@
     .item {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: left;
+        align-items: right;
         flex-wrap: wrap;
-        width: 668px;
+        max-width: 668px;
         height: 335px;
-        @include main-paddings(50px, 30px, 0);
-        padding-right: 50px;
         border: 1px dashed blue;
     }
     .item__img {
@@ -66,8 +62,22 @@
         height: 335px;
     }
     .item__descr {
-        margin-left: 0;
+        width: 275px;
+        height: 260px;
+        padding-left: 0;
+        padding-top: 30px;
+        margin-left: 28px;
         margin-right: auto;
+        box-sizing: border-box;
+    }
+    .item__price-block {
+        width: 270px;
+        height: 75px;
+        margin-left: 33px;
+        margin-right: auto;
+        padding-top: 25px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
     }
 }
 
@@ -82,5 +92,8 @@
     .item__img {
         width: 315px;
         height: 460px;
+    }
+    .item__price-block {
+        margin-left: auto;
     }
 }
