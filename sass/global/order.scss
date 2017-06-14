@@ -1,28 +1,47 @@
 .order {
     margin: 0 auto;
-    width: 260px;
-    @include main-paddings(30px, 28px, 55px);
-    padding-right: 30px;
     @include font-set(bold, 17px, 18px, left);
     color: $black;
+    border: 1px solid red;
 }
 
 .order__txt {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 320px;
+    @include main-paddings(30px, 28px, 55px);
+    padding-right: 30px;
+    box-sizing: border-box;
     display: block;
     @include font-set(normal, 13px, 24px, left);
     color: $darkgray;
-    &--required {
-        @include font-set(normal, 14px, 16px, left);
-    }
 }
 
-.order__fieldset {
+.order__required {
+    @include font-set(normal, 14px, 16px, left);
+}
+
+.order__fieldset-radio,
+.order__fieldset-checkbox,
+.order__fieldset-username,
+.order__fieldset-userdata,
+.order__fieldset-comment {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 30px;
     padding-top: 25px;
-    border: none;
+    border: 1px dashed blue;
+}
+
+.order__fieldset-inner {
+    margin: 0 auto;
+    max-width: 320px;
+    @include main-paddings(30px, 28px, 55px);
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.order__checkbox {
+    border: 1px dashed green;
 }
 
 .order__fieldset-headline {
@@ -33,4 +52,116 @@
 
 .order__textfield {
     display: block;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $black;
+    &--comment {
+        min-height: 140px;
+        border: 2px solid $black;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 768px) {
+    .order__txt {
+        max-width: 768px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .order__fieldset-inner {
+        display: flex;
+        max-width: 768px;
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: space-between;
+        &--block {
+            display: block;
+        }
+    }
+    .order__fieldset-checkbox,
+    .order__fieldset-userdata {
+        background-color: $lightestgray;
+    }
+    .order__fieldset-radio,
+    .order__fieldset-checkbox,
+    .order__fieldset-username,
+    .order__fieldset-userdata,
+    .order__fieldset-comment {
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .order__checkbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-height: 205px;
+        width: 500px;
+    }
+    .order__username-field {
+        display: flex;
+        width: 500px;
+        border: 1px dashed green;
+    }
+    .order__tel-field,
+    .order__email-field {
+        display: flex;
+        justify-content: space-between;
+    }
+    .order__textfield {
+        &--email,
+        &--tel,
+        &--comment {
+            width: 500px;
+        }
+    }
+    .order__btn {
+        order: -1;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1150px) {
+    .order__fieldset-inner {
+        max-width: 1050px;
+        padding-left: 60px;
+        padding-right: 90px;
+    }
+    .order__txt {
+        min-width: 1050px;
+        margin: 0 auto;
+        padding-left: 175px;
+        padding-right: 175px;
+    }
+    .order__fieldset-headline {
+        padding-right: 70px;
+        &--tel,
+        &--email {
+            padding-right: 0;
+        }
+    }
+    .order__checkbox {
+        width: 785px;
+        min-height: 130px;
+    }
+    .order__username-field {
+        width: 700px;
+        padding-right: 85px;
+    }
+    .order__textfield {
+        &--email,
+        &--tel,
+        &--comment {
+            width: 700px;
+            margin-right: 85px;
+        }
+    }
+    .order__required {
+        margin-right: 85px;
+    }
+    .order__btn {
+        margin-left: 115px;
+    }
 }

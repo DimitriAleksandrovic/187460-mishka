@@ -1,20 +1,20 @@
-.page-header__wrapper {
-    width: 320px;
+.page-header {
     margin: 0 auto;
-    border: 1px solid red;
+    margin-top: 80px;
+    background-color: $lightestgray;
+    /*border: 1px solid orange;*/
 }
 
-.page-header__logo {
+.page-header__inner {
+    max-width: 320px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 86px;
-    height: 50px;
+    /*padding: 0 30px;*/
+    /*border: 1px solid red;*/
 }
 
 .page-header__tittle {
-    margin: 0;
-    width: 244px;
+    margin: 0 auto;
+    max-width: 244px;
     height: 30px;
     padding-left: 38px;
     padding-right: 38px;
@@ -28,6 +28,62 @@
         height: 90px;
         padding-bottom: 120px;
         background-image: url('../../img/hero-mobile@1x.jpg');
-        background-position: 50% 20%;
+        background-position: center 20%;
+    }
+}
+
+.page-header__logo {
+    position: absolute;
+    top: 10px;
+    width: 320px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url('../../img/logo-mobile.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: $white;
+    border-bottom: 1px solid $lightgray;
+}
+
+@media (min-width: 768px) {
+    .page-header__inner {
+        min-width: 768px;
+    }
+    .page-header__tittle {
+        max-width: 496px;
+        /*margin-top: 80px;*/
+        padding-left: 135px;
+        padding-right: 135px;
+        padding-top: 160px;
+        padding-bottom: 370px;
+        @include font-set(bold,
+        43px,
+        50px,
+        center);
+    }
+    .page-header__logo {
+        width: 768px;
+        height: 80px;
+        background-image: url('../../img/logo-mobile.svg');
+        background-position: 50px 50%;
+    }
+}
+
+@media (min-width: 1150px) {
+    .page-header {
+        margin-top: 90px;
+    }
+    .page-header__inner {
+        max-width: 1150px;
+    }
+    .page-header__tittle {
+        max-width: 606px;
+        padding-left: 272px;
+        padding-right: 272px;
+    }
+    .page-header__logo {
+        width: 1150px;
+        height: 90px;
+        background-position: 50% 50%;
     }
 }

@@ -1,6 +1,29 @@
 .feature {
     margin: 0;
-    @include main-paddings(30px, 85px, 0);
+    /*@include main-paddings(30px, 85px, 0);*/
+    padding-top: 85px;
     @include font-set(bold, 17px, 20px, left);
     color: $black;
+}
+
+@media (min-width: 768px) {
+    .feature-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 668px;
+        margin: 0 auto;
+        /*border: 1px solid blue;*/
+    }
+    .feature {
+        width: 334px;
+        padding-left: 0;
+        padding-right: 35px;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 1150px) {
+    .feature-wrapper {
+        width: 700px;
+    }
 }
