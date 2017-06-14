@@ -1,8 +1,13 @@
 .contacts__inner {
     margin: 0 auto;
-    @include main-paddings(30px, 45px, 0);
+    max-width: 320px;
+    box-sizing: border-box;
+    border: 1px solid green;
+}
+
+.contacts__block {
+    @include main-paddings(30px, 28px, 55px);
     padding-right: 30px;
-    /*border: 1px solid green;*/
 }
 
 .contacts__headline {
@@ -32,14 +37,18 @@
 .contacts__map {
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
     height: 458px;
     background-color: green;
 }
 
 @media (min-width: 768px) {
     .contacts__inner {
-        width: 668px;
+        max-width: 768px;
+    }
+    .contacts__block {
         @include main-paddings(50px, 30px, 0);
         padding-right: 50px;
     }
@@ -49,10 +58,17 @@
     .contacts__txt:nth-child(4) {
         padding-left: 50px;
     }
+    .contacts__map {
+        max-width: 768px;
+        height: 450px;
+    }
 }
 
 @media (min-width: 1150px) {
     .contacts {
+        /*border: 1px dashed blue;*/
+    }
+    .contacts__inner {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -60,9 +76,9 @@
         padding-left: 50px;
         padding-right: 50px;
         max-height: 640px;
-        /*border: 1px dashed blue;*/
+        max-width: 1150px;
     }
-    .contacts__inner {
+    .contacts__block {
         display: flex;
         flex-wrap: wrap;
         max-width: 500px;

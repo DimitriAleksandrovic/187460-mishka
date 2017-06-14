@@ -1,4 +1,4 @@
-.items__inner {
+.main-inner {
     margin: 0 auto;
     max-width: 320px;
     @include main-paddings(30px, 30px, 0);
@@ -7,14 +7,22 @@
     border: 1px solid green;
 }
 
+@media (min-width: 768px) {
+    .main-inner {
+        max-width: 768px;
+        @include main-paddings(50px, 80px, 0px);
+        padding-right: 50px;
+    }
+}
+
 @media (min-width: 1150px) {
-    .items__inner {
+    .main-inner {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-left: 50px;
         padding-right: 50px;
-        width: 1050px;
+        max-width: 1150px;
     }
 }
