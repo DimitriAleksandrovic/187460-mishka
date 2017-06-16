@@ -2,22 +2,22 @@
     margin: 0 auto;
     margin-top: 80px;
     background-color: $lightestgray;
-    /*border: 1px solid orange;*/
+    border: 1px solid orange;
 }
 
 .page-header__inner {
     max-width: 320px;
     margin: 0 auto;
     /*padding: 0 30px;*/
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 .page-header__tittle {
     margin: 0 auto;
     max-width: 244px;
-    height: 30px;
-    padding-left: 38px;
-    padding-right: 38px;
+    /*height: 30px;*/
+    /*padding-left: 38px;
+    padding-right: 38px;*/
     padding-top: 72px;
     padding-bottom: 75px;
     @include font-set(bold, 27px, 30px, center);
@@ -34,11 +34,11 @@
 
 .page-header__logo {
     position: absolute;
-    top: 10px;
+    top: 9px;
     width: 320px;
     height: 80px;
     margin: 0 auto;
-    background-image: url('../../img/logo-mobile.svg');
+    background-image: url('../img/logo-mobile.svg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-color: $white;
@@ -52,10 +52,10 @@
     .page-header__tittle {
         max-width: 496px;
         /*margin-top: 80px;*/
-        padding-left: 135px;
-        padding-right: 135px;
-        padding-top: 160px;
-        padding-bottom: 370px;
+        /*padding-left: 135px;
+        padding-right: 135px;*/
+        padding-top: 90px;
+        padding-bottom: 66px;
         @include font-set(bold,
         43px,
         50px,
@@ -64,22 +64,33 @@
     .page-header__logo {
         width: 768px;
         height: 80px;
-        background-image: url('../../img/logo-mobile.svg');
+        background-image: url('../img/logo-mobile.svg');
         background-position: 50px 50%;
     }
 }
 
 @media (min-width: 1150px) {
     .page-header {
+        /*position: relative;*/
         margin-top: 90px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 16px;
+            background-color: red;
+        }
     }
     .page-header__inner {
         max-width: 1150px;
     }
     .page-header__tittle {
         max-width: 606px;
-        padding-left: 272px;
-        padding-right: 272px;
+        padding-bottom: 88px;
+        @include font-set(bold,
+        53px,
+        57px,
+        center);
     }
     .page-header__logo {
         width: 1150px;

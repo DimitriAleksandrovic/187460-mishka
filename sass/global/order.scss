@@ -40,7 +40,8 @@
     box-sizing: border-box;
 }
 
-.order__checkbox {
+.order__checkbox,
+.order__radio {
     border: 1px dashed green;
 }
 
@@ -65,6 +66,9 @@
 }
 
 @media (min-width: 768px) {
+    .order {
+        @include font-set(bold, 19px, 19px, left);
+    }
     .order__txt {
         max-width: 768px;
         padding-left: 50px;
@@ -134,6 +138,8 @@
         margin: 0 auto;
         padding-left: 175px;
         padding-right: 175px;
+        padding-top: 135px;
+        @include font-set(normal, 17px, 30px, left);
     }
     .order__fieldset-headline {
         padding-right: 70px;
@@ -141,6 +147,10 @@
         &--email {
             padding-right: 0;
         }
+    }
+    .order__radio {
+        width: 785px;
+        min-height: 130px;
     }
     .order__checkbox {
         width: 785px;
