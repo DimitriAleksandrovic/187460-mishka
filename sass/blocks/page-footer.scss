@@ -75,18 +75,20 @@
 
 @media (min-width: 768px) {
     .page-footer__inner {
-        width: 668px;
+        max-width: 768px;
+        padding-left: 50px;
+        padding-right: 50px;
         display: flex;
         justify-content: space-between;
     }
     .page-footer__logo {
         display: block;
-        background-image: url('../img/logo-mobile.svg');
+        background: url('../img/logo-mobile.svg') 50% 50% no-repeat;
     }
 }
 
 @media (min-width: 1150px) {
     .page-footer__inner {
-        width: 1150px;
+        max-width: 1150px;
     }
 }

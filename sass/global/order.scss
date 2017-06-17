@@ -195,20 +195,27 @@
         19px,
         left);
     }
-    .order__txt {
-        max-width: 768px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
     .order__fieldset-inner {
         display: flex;
         max-width: 768px;
         padding-left: 50px;
         padding-right: 50px;
+        padding-top: 5px;
         justify-content: space-between;
+        align-items: baseline;
         &--block {
             display: block;
         }
+    }
+    .order__txt {
+        max-width: 768px;
+        padding-top: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+        @include font-set(normal,
+        17px,
+        30px,
+        left);
     }
     .order__fieldset-checkbox,
     .order__fieldset-userdata {
@@ -220,8 +227,19 @@
     .order__fieldset-userdata,
     .order__fieldset-comment {
         margin: 0;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+    .order__radio {
+        width: 500px;
+        height: 130px;
+        /*margin-top: 5px;*/
+    }
+    .order__radio-field {
+        height: 50px;
+        padding-top: 10px;
+        margin-bottom: 25px;
+        box-sizing: border-box;
     }
     .order__checkbox {
         display: flex;
@@ -229,6 +247,23 @@
         justify-content: space-between;
         min-height: 205px;
         width: 500px;
+    }
+    .order__checkbox-field {
+        width: 240px;
+    }
+    .order__fieldlabel {
+        &--radio,
+        &--checkbox {
+            padding-left: 80px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                width: 52px;
+                height: 52px;
+            }
+        }
     }
     .order__username-field {
         display: flex;
