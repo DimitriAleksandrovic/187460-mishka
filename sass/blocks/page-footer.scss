@@ -6,7 +6,10 @@
 
 .page-footer__inner {
     margin: 0 auto;
-    width: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    max-width: 320px;
     border: 1px solid red;
 }
 
@@ -15,17 +18,59 @@
 }
 
 .page-footer__social-block {
-    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 260px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray;
+}
+
+.page-footer__social {
+    width: 30px;
+    height: 30px;
+    &--inst {
+        background: url('../img/icon-insta.svg') 0 5px no-repeat;
+        /*background-size: 22px;*/
+    }
+    &--fb {
+        background: url('../img/icon-fb.svg') 50% no-repeat;
+    }
+    &--twit {
+        background: url('../img/icon-twitter.svg') 100% 5px no-repeat;
+    }
 }
 
 .page-footer__copyright {
-    height: 22px;
+    display: block;
+    position: relative;
+    height: 80px;
     margin: 0;
-    @include main-paddings(30px, 28px, 0);
-    padding-bottom: 30px;
-    @include font-set(bold, 19px, 22px, center);
+    @include main-paddings(40px,
+    30px,
+    30px);
+    padding-right: 95px;
+    box-sizing: border-box;
+    @include font-set(bold,
+    19px,
+    22px,
+    center);
     color: $black;
     text-decoration: none;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: 200px;
+        width: 28px;
+        height: 35px;
+        background: url('../img/logo-htmlacademy.svg') no-repeat;
+        /*color: &green;*/
+    }
 }
 
 @media (min-width: 768px) {
@@ -36,7 +81,7 @@
     }
     .page-footer__logo {
         display: block;
-        background-image: url('../../img/logo-mobile.svg')
+        background-image: url('../img/logo-mobile.svg');
     }
 }
 
