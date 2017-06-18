@@ -66,7 +66,7 @@
         &:nth-child(n+3) {
             display: block;
             height: 60px;
-            @include main-paddings(35px, 20px, 20px);
+            @include main-paddings(35px, 16px, 20px);
             @include font-set(bold, 15px, 24px, left);
             background-color: transparent;
         }
