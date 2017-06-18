@@ -1,38 +1,58 @@
 .promo-video {
     margin: 0 auto;
     margin-top: 30px;
-    border: 1px solid $lightgray;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    padding-bottom: 30px;
 }
 
 .promo-video__video {
+    margin: 0 auto;
     width: 260px;
     height: 150px;
 }
 
 .promo-video__name {
+    position: relative;
     margin: 0;
-    @include main-paddings(30px, 25px, 25px);
+    @include main-paddings(90px, 25px, 25px);
     padding-right: 30px;
     @include font-set(bold, 17px, 24px, left);
     color: $black;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 34px;
+        left: 34px;
+        width: 34px;
+        height: 24px;
+        background: url("../img/icon-video.svg") 50% no-repeat;
+    }
 }
 
 .promo-video__descr {
-    margin: 0;
-    @include main-paddings(30px, 30px, 30px);
-    padding-right: 30px;
-    @include font-set(normal, 13px, 24px, left);
+    margin: 0 auto;
+    @include main-paddings(35px,
+    25px,
+    25px);
+    padding-right: 35px;
+    @include font-set(normal,
+    13px,
+    24px,
+    left);
     color: $darkgray;
 }
 
 .promo-video__btn {
-    width: 188px;
+    margin: 0 auto;
+    width: 192px;
 }
 
 @media (min-width: 768px) {
     .promo-video {
-        padding: 45px;
+        margin-bottom: 25px;
         padding-top: 0;
+        padding-bottom: 45px;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -42,7 +62,7 @@
         /*height: 740px;*/
     }
     .promo-video__video {
-        margin-top: 0;
+        margin: 0 auto;
         width: 100%;
         height: 455px;
         order: -1;
@@ -50,14 +70,31 @@
     }
     .promo-video__name {
         order: 0;
+        @include font-set(bold,
+        20px,
+        24px,
+        left);
+        padding-left: 103px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        &::before {
+            top: 36px;
+            left: 38px;
+        }
     }
     .promo-video__descr {
-        padding: 0;
+        padding-top: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        @include font-set(normal,
+        15px,
+        30px,
+        left);
     }
     .promo-video__btn {
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 0;
+        width: 582px;
+        margin: 0 auto;
+        margin-top: 10px;
     }
 }
 
@@ -68,6 +105,7 @@
         flex-grow: 1;
         height: 456px;
         padding-left: 0px;
+        margin-top: 0;
     }
     .promo-video__video {
         width: 680px;
@@ -77,14 +115,23 @@
     .promo-video__name {
         width: 230px;
         margin-top: 45px;
+        margin-bottom: 30px;
         padding: 0;
         padding-top: 55px;
+        &::before {
+            top: 0px;
+            left: 0px;
+        }
     }
     .promo-video__descr {
+        margin-right: 70px;
+        margin-bottom: auto;
         width: 230px;
+        padding-left: 0;
     }
     .promo-video__btn {
-        width: 230px;
         margin-bottom: 60px;
+        margin-left: 0;
+        width: 230px;
     }
 }

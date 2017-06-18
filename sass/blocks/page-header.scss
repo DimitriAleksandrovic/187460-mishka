@@ -19,7 +19,7 @@
     /*padding-left: 38px;
     padding-right: 38px;*/
     padding-top: 70px;
-    padding-bottom: 75px;
+    padding-bottom: 73px;
     @include font-set(bold, 27px, 30px, center);
     color: rgb(1, 0, 0);
     background-color: $lightestgray;
@@ -92,7 +92,7 @@
     .page-header__tittle {
         max-width: 606px;
         padding-top: 90px;
-        padding-bottom: 80px;
+        padding-bottom: 85px;
         @include font-set(bold,
         53px,
         57px,
