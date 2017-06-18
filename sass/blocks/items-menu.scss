@@ -1,16 +1,39 @@
 .items-menu {
     display: block;
-    width: 290px;
-    min-height: 48px;
+    width: 320px;
+    min-height: 102px;
+    box-sizing: border-box;
     @include font-set(bold, 19px, 24px, left);
     color: $white;
     &--interier {
-        @include main-paddings(30px, 28px, 30px);
+        position: relative;
+        @include main-paddings(30px, 28px, 25px);
         background-color: $green;
+        &::after {
+            position: absolute;
+            content: "";
+            top: 23px;
+            right: 37px;
+            width: 41px;
+            height: 63px;
+            background: url("../img/icon-interior.svg") no-repeat;
+        }
     }
     &--toys {
-        @include main-paddings(30px, 28px, 30px);
+        position: relative;
+        @include main-paddings(30px,
+        28px,
+        25px);
         background-color: $darkgreen;
+        &::after {
+            position: absolute;
+            content: "";
+            top: 22px;
+            right: 27px;
+            width: 61px;
+            height: 61px;
+            background: url("../img/icon-toy.svg") no-repeat;
+        }
     }
 }
 
@@ -20,7 +43,10 @@
         margin: 0 auto;
         max-height: 115px;
         width: 668px;
-        @include font-set(bold, 20px, 30px, left);
+        @include font-set(bold,
+        20px,
+        30px,
+        left);
         /*border: 1px solid blue;*/
     }
 }
