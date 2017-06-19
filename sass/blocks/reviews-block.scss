@@ -1,16 +1,32 @@
+.reviews-block {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -7px;
+        width: 100%;
+        height: 7px;
+        background-color: red;
+    }
+}
+
 .reviews-block__inner {
     width: 260px;
     margin: 0 auto;
     padding-top: 30px;
+    padding-bottom: 44px;
     border: 1px solid green;
 }
 
 .reviews-block__headline {
     margin: 0;
-    /*@include main-paddings(30px, 35px, 0);*/
     @include font-set(bold, 25px, 30px, left);
     color: $black;
     border: 1px solid blue;
+}
+
+.reviews-block__reply {
+    margin-top: 40px;
 }
 
 @media (min-width: 768px) {
@@ -24,7 +40,7 @@
     .reviews-block__headline {
         order: -2;
     }
-    .btn-reply {
+    .reviews-block__reply {
         order: -1;
         margin: 0;
         margin-left: auto;

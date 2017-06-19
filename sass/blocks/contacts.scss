@@ -6,15 +6,13 @@
 }
 
 .contacts__block {
-    @include main-paddings(30px, 28px, 55px);
+    @include main-paddings(30px, 40px, 30px);
     padding-right: 30px;
 }
 
 .contacts__headline {
     margin: 0;
-    /*@include main-paddings(30px, 35px, 0);*/
-    padding-top: 35px;
-    @include font-set(bold, 25px, 30px, left);
+    @include font-set(bold, 18px, 30px, left);
     color: $black;
 }
 
@@ -23,8 +21,9 @@
     vertical-align: top;
     max-width: 145px;
     margin: 0;
-    padding-top: 40px;
-    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 28px;
     @include font-set(normal, 15px, 30px, left);
     color: $darkgray;
     /*border: 1px solid orange;*/
@@ -35,7 +34,7 @@
 }
 
 .contacts__map {
-    margin-top: 40px;
+    /*margin-top: 10px;*/
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;

@@ -1,7 +1,7 @@
 .review__text {
     margin: 0;
     /*@include main-paddings(30px, 30px, 0);*/
-    padding-top: 30px;
+    padding-top: 20px;
     @include font-set(normal, 15px, 30px, left);
     color: $darkgray;
 }
@@ -15,12 +15,29 @@
         color: $black;
     }
     &--nick {
-        margin-bottom: 28px;
+        margin-bottom: 35px;
         /*@include main-paddings(30px, 10px, 0);*/
         padding-top: 10px;
         @include font-set(normal, 17px, 20px, left);
         color: $darkgray;
     }
+}
+
+.review__button {
+    display: flex;
+    width: 260px;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+.review__btn-prev,
+.review__btn-next {
+    width: 130px;
+    height: 50px;
+    border-color: $lightgray;
+}
+
+.review__btn-next {
+    border-left: none;
 }
 
 @media (min-width: 768px) {
