@@ -119,7 +119,7 @@
         margin: 0 auto;
         padding-top: 55px;
         width: 668px;
-        max-height: 404px;
+        height: 404px;
         /*border: 1px solid blue;*/
     }
     .week-offer__descr {
@@ -135,7 +135,18 @@
         @include font-set(normal, 15px, 20px, left);
         color: $darkgray;
     }
+    .week-offer__properties-cell {
+        &--col1 {
+            height: 35px;
+            width: 90px;
+        }
+        &--col2 {
+            height: 35px;
+            width: 195px;
+        }
+    }
     .week-offer__price {
+        margin: 0 auto;
         @include font-set(bold, 20px, 24px, center);
     }
     .week-offer__img {
@@ -155,15 +166,20 @@
 }
 
 @media (min-width: 1150px) {
-    /*.week-offer {
-        padding-top: 75px;
-    }*/
+    .week-offer {
+        position: relative;
+        &::after {
+            bottom: -23px;
+            height: 23px;
+        }
+    }
     .week-offer__inner {
         position: relative;
         max-width: 1050px;
         padding-left: 175px;
         padding-right: 0;
-        padding-top: 75px;
+        padding-top: 85px;
+        padding-bottom: 75px;
         box-sizing: border-box;
     }
     .week-offer__main {
@@ -175,18 +191,44 @@
         display: block;
         &--name {
             position: absolute;
-            left: 175px;
-            top: 128px;
+            left: 170px;
+            top: 135px;
             @include font-set(bold, 53px, 57px, left);
         }
         &--mark {
             position: absolute;
-            left: 46px;
-            top: 140px;
+            left: 45px;
+            top: 147px;
         }
     }
     .week-offer__descr {
         padding-top: 160px;
+        margin-bottom: 15px;
+    }
+    .week-offer__properties-cell {
+        padding-top: 8px;
+        padding-bottom: 10px;
+        &--col1 {
+            height: 33px;
+            width: 90px;
+        }
+        &--col2 {
+            height: 33px;
+            width: 195px;
+        }
+    }
+    .week-offer__price {
+        margin: 0 auto;
+        margin-top: auto;
+        padding-bottom: 0;
+        @include font-set(bold, 20px, 24px, center);
+    }
+    .week-offer__btn {
+        margin-right: auto;
+        margin-top: 35px;
+        margin-bottom: 0;
+        width: 290px;
+        box-sizing: border-box;
     }
     .week-offer__img {
         width: 525px;

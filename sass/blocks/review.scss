@@ -26,7 +26,7 @@
 .review__button {
     display: flex;
     width: 260px;
-    background-color: rgba(0, 0, 255, 0.2);
+    /*background-color: rgba(0, 0, 255, 0.2);*/
 }
 
 .review__btn-prev,
@@ -46,8 +46,30 @@
         flex-wrap: wrap;
         justify-content: space-between;
         border: 1px dashed blue;
+        padding-bottom: 40px;
     }
-    .review-text {
+    .review__text {
         margin-right: auto;
+        padding-top: 45px;
+        padding-bottom: 30px;
+        @include font-set(normal, 17px, 30px, left);
+    }
+    .review__button {
+        display: flex;
+        width: 180px;
+        /*background-color: rgba(0, 0, 255, 0.2);*/
+    }
+    .review__btn-prev,
+    .review__btn-next {
+        width: 90px;
+        height: 50px;
+        border-color: red;
+    }
+}
+
+@media (min-width: 1150px) {
+    .review__text {
+        max-width: 775px;
+        padding-bottom: 12px;
     }
 }

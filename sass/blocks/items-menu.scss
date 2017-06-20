@@ -1,68 +1,18 @@
-.items-menu {
-    display: block;
-    width: 320px;
-    min-height: 102px;
-    box-sizing: border-box;
-    @include font-set(bold, 19px, 24px, left);
-    color: $white;
-    &--interier {
-        position: relative;
-        @include main-paddings(30px, 28px, 25px);
-        background-color: $green;
-        &::after {
-            position: absolute;
-            content: "";
-            top: 23px;
-            right: 37px;
-            width: 41px;
-            height: 63px;
-            background: url("../img/icon-interior.svg") no-repeat;
-        }
-    }
-    &--toys {
-        position: relative;
-        @include main-paddings(30px,
-        28px,
-        25px);
-        background-color: $darkgreen;
-        &::after {
-            position: absolute;
-            content: "";
-            top: 22px;
-            right: 27px;
-            width: 61px;
-            height: 61px;
-            background: url("../img/icon-toy.svg") no-repeat;
-        }
-    }
-}
-
-@media (min-width: 768px) {
     .items-menu {
-        position: relative;
-        display: flex;
-        margin: 0 auto;
-        max-height: 108px;
-        width: 668px;
-        @include font-set(bold,
-        20px,
-        30px,
-        left);
-        &::after {
-            content: "";
-            position: absolute;
-            top: 108px;
-            width: 100%;
-            height: 10px;
-            background-color: red;
-        }
+        display: block;
+        width: 320px;
+        min-height: 102px;
+        box-sizing: border-box;
+        @include font-set(bold, 19px, 24px, left);
+        color: $white;
         &--interier {
-            padding-top: 30px;
-            padding-left: 35px;
+            position: relative;
+            @include main-paddings(30px, 28px, 25px);
+            background-color: $green;
             &::after {
                 position: absolute;
                 content: "";
-                top: 30px;
+                top: 23px;
                 right: 37px;
                 width: 41px;
                 height: 63px;
@@ -70,23 +20,106 @@
             }
         }
         &--toys {
-            padding-top: 30px;
-            padding-left: 35px;
+            position: relative;
+            @include main-paddings(30px,
+            28px,
+            25px);
+            background-color: $darkgreen;
             &::after {
                 position: absolute;
                 content: "";
-                top: 32px;
-                right: 35px;
+                top: 22px;
+                right: 27px;
                 width: 61px;
                 height: 61px;
                 background: url("../img/icon-toy.svg") no-repeat;
             }
         }
     }
-}
-
-@media (min-width: 1150px) {
-    .items-menu {
-        width: 1050px;
+    
+    @media (min-width: 768px) {
+        .items-menu {
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+            max-height: 108px;
+            width: 668px;
+            @include font-set(bold,
+            20px,
+            30px,
+            left);
+            &::after {
+                content: "";
+                position: absolute;
+                top: 108px;
+                width: 100%;
+                height: 10px;
+                background-color: red;
+            }
+            &--interier {
+                padding-top: 30px;
+                padding-left: 35px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 30px;
+                    right: 37px;
+                    width: 41px;
+                    height: 63px;
+                    background: url("../img/icon-interior.svg") no-repeat;
+                }
+            }
+            &--toys {
+                padding-top: 30px;
+                padding-left: 35px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 32px;
+                    right: 35px;
+                    width: 61px;
+                    height: 61px;
+                    background: url("../img/icon-toy.svg") no-repeat;
+                }
+            }
+        }
     }
-}
+    
+    @media (min-width: 1150px) {
+        .items-menu {
+            width: 1050px;
+            height: 100px;
+            &::after {
+                top: 100px;
+                width: 100%;
+                height: 16px;
+                background-color: red;
+            }
+            &--interier {
+                padding-top: 28px;
+                padding-left: 37px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 30px;
+                    right: 37px;
+                    width: 41px;
+                    height: 63px;
+                    background: url("../img/icon-interior.svg") no-repeat;
+                }
+            }
+            &--toys {
+                padding-top: 28px;
+                padding-left: 37px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 32px;
+                    right: 35px;
+                    width: 61px;
+                    height: 61px;
+                    background: url("../img/icon-toy.svg") no-repeat;
+                }
+            }
+        }
+    }

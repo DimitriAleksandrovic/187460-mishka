@@ -10,8 +10,10 @@
 @media (min-width: 768px) {
     .feature-wrapper {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         width: 668px;
+        height: 490px;
         margin: 0 auto;
         /*border: 1px solid blue;*/
     }
@@ -19,7 +21,10 @@
         width: 334px;
         padding-left: 0;
         padding-right: 35px;
+        padding-top: 55px;
+        padding-bottom: 55px;
         box-sizing: border-box;
+        @include font-set(bold, 20px, 22px, left);
     }
 }
 

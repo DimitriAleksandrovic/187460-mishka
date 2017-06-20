@@ -105,6 +105,11 @@
         53px,
         57px,
         center);
+        &--index {
+            max-width: 620px;
+            padding-top: 155px;
+            padding-bottom: 380px;
+        }
     }
     .page-header__logo {
         width: 1150px;

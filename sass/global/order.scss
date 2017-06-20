@@ -75,6 +75,9 @@
             display: none;
         }
     }
+    &--radio {
+        display: inline-block;
+    }
     &--checkbox {
         &::before {
             border-radius: 0;
