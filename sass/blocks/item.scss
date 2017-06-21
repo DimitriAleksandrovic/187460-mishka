@@ -2,7 +2,7 @@
     margin: 0 auto;
     margin-top: 30px;
     width: 260px;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     box-sizing: border-box;
 }
 
@@ -41,7 +41,7 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid red;
+    border-top: 1px solid $lightgray;
 }
 
 .item__price {
@@ -70,7 +70,7 @@
         flex-wrap: wrap;
         width: 668px;
         height: 335px;
-        border: 1px dashed blue;
+        /*border: 1px dashed blue;*/
     }
     .item__img {
         width: 334px;
@@ -109,7 +109,7 @@
         padding-bottom: 30px;
         box-sizing: border-box;
     }
-    item__price {
+    .item__price {
         @include font-set(bold,
         17px,
         24px,

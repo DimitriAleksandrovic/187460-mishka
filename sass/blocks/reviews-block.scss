@@ -15,14 +15,14 @@
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 44px;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 .reviews-block__headline {
     margin: 0;
     @include font-set(bold, 25px, 30px, left);
     color: $black;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 .reviews-block__reply {

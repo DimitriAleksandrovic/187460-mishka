@@ -2,14 +2,14 @@
     margin: 0 auto;
     margin-top: 80px;
     background-color: $lightestgray;
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
 }
 
 .page-header__inner {
     max-width: 320px;
     margin: 0 auto;
     /*padding: 0 30px;*/
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .page-header__tittle {
@@ -34,7 +34,7 @@
 
 .page-header__logo {
     position: absolute;
-    top: 9px;
+    top: 0;
     width: 320px;
     height: 80px;
     margin: 0 auto;
@@ -66,8 +66,8 @@
         /*margin-top: 80px;*/
         /*padding-left: 135px;
         padding-right: 135px;*/
-        padding-top: 97px;
-        padding-bottom: 66px;
+        padding-top: 90px;
+        padding-bottom: 72px;
         @include font-set(bold,
         43px,
         50px,
@@ -107,8 +107,8 @@
         center);
         &--index {
             max-width: 620px;
-            padding-top: 155px;
-            padding-bottom: 380px;
+            padding-top: 150px;
+            padding-bottom: 385px;
         }
     }
     .page-header__logo {
