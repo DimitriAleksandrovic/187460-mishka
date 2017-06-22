@@ -1,13 +1,13 @@
 .features-block__inner {
     width: 260px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 32px;
     /*border: 1px solid green;*/
 }
 
 .features-block__headline {
     margin: 0;
-    /*@include main-paddings(30px, 35px, 0);*/
+    padding-bottom: 27px;
     @include font-set(bold, 25px, 30px, left);
     color: $black;
 }
@@ -16,14 +16,21 @@
     .features-block__inner {
         width: 668px;
         margin: 0 auto;
-        padding-top: 60px;
+        padding-top: 65px;
+    }
+    .features-block__headline {
+        margin: 0;
+        margin-bottom: 22px;
+        @include font-set(bold, 43px, 50px, left);
+        color: $black;
     }
 }
 
 @media (min-width: 1150px) {
     .features-block__inner {
         width: 700px;
-        padding-bottom: 85px;
+        padding-top: 80px;
+        /*padding-bottom: 25px;*/
     }
     .features-block__headline {
         @include font-set(bold, 53px, 57px, left);

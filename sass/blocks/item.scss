@@ -1,9 +1,13 @@
 .item {
-    @include main-paddings(30px, 30px, 0);
-    padding-right: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 260px;
+    /*border: 1px solid green;*/
+    box-sizing: border-box;
 }
 
 .item__img {
+    margin: 0 auto;
     display: block;
     background: green;
 }
@@ -11,13 +15,13 @@
 .item__descr {
     margin: 0 auto;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     width: 200px;
-    border: 1px solid red;
 }
 
 .item__name {
     margin: 0;
+    padding-bottom: 5px;
     @include font-set(bold, 17px, 24px, left);
     color: $black;
 }
@@ -29,45 +33,87 @@
 }
 
 .item__price-block {
-    margin: 0;
+    margin: 0 auto;
     margin-top: auto;
-    @include main-paddings(30px, 20px, 25px);
-    padding-right: 30px;
-    border: 1px solid red;
+    padding-top: 21px;
+    padding-bottom: 27px;
+    width: 205px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $lightgray;
 }
 
 .item__price {
-    display: inline-block;
     margin: 0;
     @include font-set(bold, 15px, 24px, left);
     color: $black;
 }
 
 .item__cart {
-    display: inline-block;
-    text-align: right;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    background: url('../img/icon-cart.svg') no-repeat 50%;
 }
 
 @media (min-width: 768px) {
     .item {
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 52px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: left;
+        justify-content: flex-start;
+        align-content: flex-start;
         flex-wrap: wrap;
         width: 668px;
         height: 335px;
-        @include main-paddings(50px, 30px, 0);
-        padding-right: 50px;
-        border: 1px dashed blue;
+        /*border: 1px dashed blue;*/
     }
     .item__img {
         width: 334px;
         height: 335px;
+        margin: 0;
     }
     .item__descr {
-        margin-left: 0;
+        width: 275px;
+        height: 255px;
+        padding-left: 0;
+        padding-top: 30px;
+        /*padding-bottom: 18px;*/
+        margin-left: 25px;
         margin-right: auto;
+        box-sizing: border-box;
+    }
+    .item__name {
+        @include font-set(bold,
+        20px,
+        24px,
+        left);
+    }
+    .item__properties {
+        @include font-set(normal,
+        15px,
+        30px,
+        left);
+    }
+    .item__price-block {
+        width: 270px;
+        height: 75px;
+        /*margin-left: 33px;*/
+        margin-left: 28px;
+        margin-right: auto;
+        padding-top: 25px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+    }
+    .item__price {
+        @include font-set(bold,
+        17px,
+        24px,
+        left);
     }
 }
 
@@ -76,11 +122,31 @@
         flex-wrap: nowrap;
         padding-left: 0;
         padding-right: 0;
+        margin-top: 65px;
         width: 315px;
         height: 660px;
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        &:nth-child(3) {
+            margin-right: 0;
+        }
     }
     .item__img {
         width: 315px;
         height: 460px;
+    }
+    .item__descr {
+        padding-top: 25px;
+        height: 105px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    .item__price-block {
+        width: 255px;
+        height: 75px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
     }
 }

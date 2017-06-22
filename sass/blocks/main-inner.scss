@@ -1,0 +1,28 @@
+.main-inner {
+    margin: 0 auto;
+    max-width: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    /*border: 1px solid green;*/
+}
+
+@media (min-width: 768px) {
+    .main-inner {
+        max-width: 768px;
+        @include main-paddings(50px, 80px, 0px);
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .main-inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 1150px;
+    }
+}
