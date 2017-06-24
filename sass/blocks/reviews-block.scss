@@ -6,7 +6,8 @@
         bottom: -7px;
         width: 100%;
         height: 7px;
-        background-color: red;
+        background-image: url('../img/bg-zigzag-line.svg');
+        background-size: auto 7px;
     }
 }
 
@@ -20,7 +21,10 @@
 
 .reviews-block__headline {
     margin: 0;
-    @include font-set(bold, 25px, 30px, left);
+    @include font-set(bold,
+    25px,
+    30px,
+    left);
     color: $black;
     /*border: 1px solid blue;*/
 }
@@ -34,6 +38,7 @@
         &::after {
             bottom: -16px;
             height: 16px;
+            background-size: auto 16px;
         }
     }
     .reviews-block__inner {
@@ -45,7 +50,10 @@
     }
     .reviews-block__headline {
         order: -2;
-        @include font-set(bold, 43px, 50px, left);
+        @include font-set(bold,
+        43px,
+        50px,
+        left);
     }
     .reviews-block__reply {
         order: -1;
@@ -58,8 +66,9 @@
 @media (min-width: 1150px) {
     .reviews-block {
         &::after {
-            bottom: -24px;
-            height: 24px;
+            bottom: -23px;
+            height: 23px;
+            background-size: auto 23px;
         }
     }
     .reviews-block__inner {
@@ -71,7 +80,10 @@
         box-sizing: border-box;
     }
     .reviews-block__headline {
-        @include font-set(bold, 53px, 57px, left);
+        @include font-set(bold,
+        53px,
+        57px,
+        left);
     }
     .reviews-block__reply {
         margin-top: auto;
