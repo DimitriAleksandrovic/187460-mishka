@@ -36,12 +36,12 @@
     .main-nav__catalog-list {
         display: flex;
         flex-wrap: wrap;
-        align-content: flex-end;
+        align-content: flex-start;
         margin-left: 15px;
         width: 340px;
     }
     .main-nav__items {
-        /*margin-top: auto;*/
+        margin-top: auto;
         min-width: 170px;
         height: 60px;
         @include main-paddings(30px, 15px, 25px);

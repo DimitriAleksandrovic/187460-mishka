@@ -22,7 +22,7 @@
         &::before {
             content: "";
             position: absolute;
-            top: 28px;
+            top: 33px;
             left: 30px;
             width: 20px;
             height: 20px;
@@ -33,7 +33,7 @@
         &::before {
             content: "";
             position: absolute;
-            top: 28px;
+            top: 33px;
             left: 30px;
             width: 20px;
             height: 20px;
@@ -61,10 +61,12 @@
         &--search {
             font-size: 0;
             max-width: 85px;
+            height: 80px;
         }
         &--cart {
             /*letter-spacing: 0.02em;*/
             max-width: 265px;
+            height: 80px;
         }
         &:last-child {
             display: block;
@@ -73,6 +75,15 @@
             color: $black;
             background-color: transparent;
             border: none;
+        }
+    }
+}
+
+@media (min-width: 1150px) {
+    .user-nav__items {
+        &--search,
+        &--cart {
+            height: 90px;
         }
     }
 }

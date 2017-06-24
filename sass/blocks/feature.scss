@@ -10,7 +10,7 @@
 @media (min-width: 768px) {
     .feature-wrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         width: 668px;
         height: 490px;
@@ -25,6 +25,24 @@
         padding-bottom: 55px;
         box-sizing: border-box;
         @include font-set(bold, 20px, 22px, left);
+        &--eco {
+            order: 1;
+        }
+        &--handmade {
+            order: 2;
+        }
+        &--price {
+            order: 3;
+        }
+        &--domestic {
+            order: 4;
+        }
+        &--like {
+            order: 5;
+        }
+        &--pack {
+            order: 6;
+        }
     }
 }
 

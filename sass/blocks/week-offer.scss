@@ -47,7 +47,7 @@
     /*display: block;*/
     margin: 0;
     padding-top: 22px;
-    padding-bottom: 15px;
+    /*padding-bottom: 15px;*/
     @include font-set(normal,
     15px,
     24px,
@@ -57,7 +57,7 @@
 
 .week-offer__properties {
     margin: 0;
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
     @include font-set(normal,
     15px,
     24px,
@@ -162,7 +162,7 @@
         max-width: 285px;
         margin-bottom: auto;
         padding-top: 0;
-        padding-bottom: 30px;
+        /*padding-bottom: 30px;*/
         @include font-set(normal,
         17px,
         30px,
@@ -170,7 +170,7 @@
     }
     .week-offer__properties {
         margin: 0;
-        padding-bottom: 60px;
+        /*padding-bottom: 60px;*/
         @include font-set(normal,
         15px,
         20px,
@@ -231,7 +231,7 @@
         padding-left: 175px;
         padding-right: 0;
         padding-top: 65px;
-        padding-bottom: 75px;
+        /*padding-bottom: 75px;*/
         box-sizing: border-box;
     }
     .week-offer__main {

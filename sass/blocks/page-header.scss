@@ -15,9 +15,6 @@
 .page-header__tittle {
     margin: 0 auto;
     max-width: 260px;
-    /*height: 30px;*/
-    /*padding-left: 38px;
-    padding-right: 38px;*/
     padding-top: 70px;
     padding-bottom: 73px;
     @include font-set(bold, 27px, 30px, center);
@@ -32,17 +29,24 @@
     }
 }
 
-.page-header__logo {
+.page-header__logo-wrapper {
     position: absolute;
     top: 0;
     width: 320px;
     height: 80px;
     margin: 0 auto;
-    background-image: url('../img/logo-mobile.svg');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
     background-color: $white;
     border-bottom: 1px solid $lightgray;
+}
+
+.page-header__logo-link {
+    display: inline-block;
+}
+
+.page-header__logo {
+    position: absolute;
+    top: 22px;
+    left: 116px;
 }
 
 @media (min-width: 768px) {
@@ -52,9 +56,11 @@
             &::after {
                 content: "";
                 position: absolute;
+                top: 285px;
                 width: 100%;
-                height: 13px;
-                background-color: red;
+                height: 10px;
+                background-image: url('../img/bg-zigzag-fill.svg');
+                background-size: auto 20px;
             }
         }
     }
@@ -63,9 +69,6 @@
     }
     .page-header__tittle {
         max-width: 496px;
-        /*margin-top: 80px;*/
-        /*padding-left: 135px;
-        padding-right: 135px;*/
         padding-top: 90px;
         padding-bottom: 72px;
         @include font-set(bold,
@@ -78,11 +81,16 @@
             padding-bottom: 380px;
         }
     }
-    .page-header__logo {
+    .page-header__logo-wrapper {
         width: 768px;
         height: 80px;
-        background-image: url('../img/logo-mobile.svg');
-        background-position: 50px 50%;
+    }
+    .page-header__logo {
+        position: absolute;
+        top: 15px;
+        left: 50px;
+        width: 113px;
+        height: 46px;
     }
 }
 
@@ -91,7 +99,9 @@
         /*position: relative;*/
         margin-top: 90px;
         &::after {
-            height: 16px;
+            top: 313px;
+            height: 23px;
+            background-size: auto 23px;
         }
     }
     .page-header__inner {
@@ -111,9 +121,15 @@
             padding-bottom: 385px;
         }
     }
-    .page-header__logo {
+    .page-header__logo-wrapper {
         width: 1150px;
         height: 90px;
-        background-position: 50% 50%;
+    }
+    .page-header__logo {
+        position: absolute;
+        top: 9px;
+        left: 500px;
+        width: 149px;
+        height: 72px;
     }
 }
