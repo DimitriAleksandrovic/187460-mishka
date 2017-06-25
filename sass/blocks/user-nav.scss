@@ -19,10 +19,11 @@
         display: none;
     }
     &--search {
+        cursor: pointer;
         &::before {
             content: "";
             position: absolute;
-            top: 33px;
+            top: 30px;
             left: 30px;
             width: 20px;
             height: 20px;
@@ -30,10 +31,11 @@
         }
     }
     &--cart {
+        cursor: pointer;
         &::before {
             content: "";
             position: absolute;
-            top: 33px;
+            top: 30px;
             left: 30px;
             width: 20px;
             height: 20px;

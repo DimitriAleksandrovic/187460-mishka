@@ -9,7 +9,7 @@
 
 @media (min-width: 768px) {
     .main-inner {
-        position: relative;
+        /*position: relative;*/
         max-width: 768px;
         @include main-paddings(50px, 80px, 0px);
         padding-right: 50px;

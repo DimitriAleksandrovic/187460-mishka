@@ -11,4 +11,14 @@
     color: $darkgray;
     background-color: $white;
     border: 2px solid $darkgray;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $darkgray;
+    color: $white;
+}
+
+.btn:active {
+    color: rgba(255, 255, 255, 0.3);
 }

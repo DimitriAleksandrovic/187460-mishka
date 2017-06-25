@@ -1,10 +1,77 @@
 .feature {
+    position: relative;
     margin: 0;
     /*@include main-paddings(30px, 85px, 0);*/
     padding-top: 60px;
     padding-bottom: 23px;
     @include font-set(bold, 17px, 20px, left);
     color: $black;
+    &--eco {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 7px;
+            width: 34px;
+            height: 39px;
+            background: url('../img/icon-feature-1.svg') no-repeat 50%;
+        }
+    }
+    &--price {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            width: 47px;
+            height: 28px;
+            background: url('../img/icon-feature-3.svg') no-repeat 50%;
+        }
+    }
+    &--like {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 7px;
+            width: 34px;
+            height: 28px;
+            background: url('../img/icon-feature-5.svg') no-repeat 50%;
+        }
+    }
+    &--handmade {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 36px;
+            height: 34px;
+            background: url('../img/icon-feature-2.svg') no-repeat 50%;
+        }
+    }
+    &--domestic {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: -6px;
+            width: 55px;
+            height: 23px;
+            background: url('../img/icon-feature-4.svg') no-repeat 50%;
+        }
+    }
+    &--pack {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 34px;
+            height: 34px;
+            background: url('../img/icon-feature-6.svg') no-repeat 50%;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -24,7 +91,10 @@
         padding-top: 55px;
         padding-bottom: 55px;
         box-sizing: border-box;
-        @include font-set(bold, 20px, 22px, left);
+        @include font-set(bold,
+        20px,
+        22px,
+        left);
         &--eco {
             order: 1;
         }
