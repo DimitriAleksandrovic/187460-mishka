@@ -1,8 +1,12 @@
 .item__link {
+    display: block;
     text-decoration: none;
-    /*&:hover {
+    &:hover {
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    }*/
+    }
+    &:active {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .item__card {
@@ -66,10 +70,12 @@
 }
 
 @media (min-width: 768px) {
-    .item__card {
-        margin: 0 auto;
+    .item__link {
         margin-top: 5px;
         margin-bottom: 52px;
+    }
+    .item__card {
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -125,11 +131,13 @@
 }
 
 @media (min-width: 1150px) {
+    .item__link {
+        margin-top: 65px;
+    }
     .item__card {
         flex-wrap: nowrap;
         padding-left: 0;
         padding-right: 0;
-        margin-top: 65px;
         width: 315px;
         min-height: 660px;
         &:nth-child(1) {
